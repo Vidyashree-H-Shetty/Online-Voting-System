@@ -209,16 +209,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['sign_up_btn'])) {
             $mail = new PHPMailer(true);
 
             try {
-                $mail->SMTPDebug = 0;
-                $mail->isSMTP();
-                $mail->Host = 'smtp.gmail.com';
-                $mail->SMTPAuth = true;
-                $mail->Username = 'shettyvidyashree31@gmail.com';
-                $mail->Password = 'sdlp xxxd bzhe dscv';
-                $mail->SMTPSecure = 'tls';
-                $mail->Port = 587;
+                $mail->SMTPDebug = 0;					    //Enable verbose debug output
+    		$mail->isSMTP();                                            //Send using SMTP
+	    	$mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
+	    	$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+	    	$mail->Username   = 'user@example.com';                     //SMTP username
+	    	$mail->Password   = 'secret';                               //SMTP password
+	    	$mail->SMTPSecure = 'tls';            			    //Enable implicit TLS encryption
+	    	$mail->Port       = 465;                                    //TCP port to connect 
 
-                $mail->setFrom('shettyvidyashree31@gmail.com', 'Online Voting');
+                $mail->setFrom('from@example.com', 'Mailer');
                 $mail->addAddress($email);
 
                 $mail->isHTML(true);
