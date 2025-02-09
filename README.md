@@ -18,11 +18,19 @@ Additional: OTP service for user authentication
 5. Create a database with name votingsystem
 6. Import votingsystem.sql file(from database folder)
 7. Run the script
+8. For PHPMailer to work, you need to install its dependencies using Composer (getcomposer.org.)
 
-Use the Following Credential to log into the Admin Session
+   Open your terminal and navigate to your project directory
+   
+   Run the following command to install PHPMailer via Composer:
+   composer require phpmailer/phpmailer
+   
+   After installation, ensure that the vendor directory is present in your project
 
-username:  982641447192
+  Use the Following Credential to log into the Admin Session:
 
-password:  VotingIndia
+  username:  982641447192
+
+  password:  VotingIndia
 
 
