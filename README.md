@@ -3,10 +3,14 @@ The Online Voting Management System is a web-based application designed to facil
 
 # Software Requirements:
 
-Frontend: HTML, CSS, Bootstrap
-Backend: PHP
-Database: MySQL
-Server: Apache or any PHP-supported web server
+Frontend: HTML, CSS, Bootstrap  
+
+Backend: PHP  
+
+Database: MySQL  
+
+Server: Apache or any PHP-supported web server  
+
 Additional: OTP service for user authentication
 
 # Steps to install:
